@@ -6,7 +6,7 @@
 
 
 ## Overview
-This Apache PySpark project is part of the Ultimate Big Data Masters Program (Cloud Focused) and focuses on calculating loan scores based on various factors such as payment history, financial health, and default history. The project utilizes PySpark to process and analyze loan-related data to derive insights and aid decision-making.
+This Apache PySpark project that focuses on calculating loan scores based on various factors such as payment history, financial health, and default history. The project utilizes PySpark to process and analyze loan-related data to derive insights and aid decision-making.
 
 
 
