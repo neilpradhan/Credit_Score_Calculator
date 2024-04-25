@@ -57,11 +57,11 @@ Modify the `config.py` file to update paths or parameters according to your envi
 
 ## Business Problem Statement
 
-**Business requirement 1**  Teams are required to analyze the cleaned data which requires the creation of permanent tables on top of the cleaned data that allow the downstream teams to query the data using simple SQL-like queries. (External tables are preferred over Managed Tables)
+**Business requirement 1**  Teams are required to analyze the cleaned data which requires the creation of permanent tables on top of the cleaned data that allow the downstream teams to query the data using simple SQL-like queries. (External tables are preferred over Managed Tables because dropping the data accidentally will not affect the dropping of the table )
 
 **Business requirement 2** The teams require a single consolidated view of all the datasets with the latest up-to-date data. (Best practice is to create a view after the data is refreshed over 24 hours, if its running every 24 hrs, no data will be older than 24 hrs, this is preferred over an SQL query because it will take time to generate the view if no further analytics is required ) 
 
-**Business requirement 3** Another team wants real quick access to the “view data” without having to wait for the view results to be processed. Since processing the results takes a very long time. (We can have a weekly join of data creation but in this case, the data may not be the latest, however, the team does not have to wait for quick access Managed table will be used)
+**Business requirement 3** Another team wants real quick access to the “view data” without having to wait for the view results to be processed. Since processing the results takes a very long time. (We can have a weekly join of data creation and storage, but in this case, even though you can view the data quickly, the data may not be the latest, however, In this case Managed table will be used and actual data stored in warehouse directory)
 
 ---
 
